@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "VK text checker",
+  "description": "Correct your typo on vk page",
+  "icons": {
+    "16": "img/icon_16.png",
+    "48": "img/icon_48.png",
+    "128": "img/icon_128.png"
+  },
+  "version": "1.0",
+  "browser_action": {
+    "default_title": "Spell checker",
+    "default_icon": "img/ocon_32.png",
+    "default_popup": "popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://vk.com/im*"],
+      "css": [],
+      "js": ["content/content.js"]
+    }
+  ]
+}
